@@ -1,0 +1,98 @@
+/** Declare some variables **/
+$primary: #007bff;
+
+// Password strength meter color for the different levels
+$strength-colors: (darkred, orangered, orange, yellowgreen, green);
+
+// Gap width between strength meter bars
+$strength-gap: 6px;
+
+body {
+  font-size: 100%;  
+}
+
+.main-container {
+  position: absolute;
+  width: 400px;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;  
+}
+
+.bold-font {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.pwd-container {
+  position: relative;
+  margin: auto;
+  width: 250px;
+}
+
+.pwd-container input {
+  width: 250px;
+  padding: 5px 33px;
+  text-align: center;  
+}
+
+button.showToggle {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  background: none;
+  border: none;
+  font-variant: small-caps;
+}
+
+.strength-meter {
+  position: relative;
+  height: 3px;
+  background: #DDD;
+  margin: 7px 0;
+  border-radius: 2px;
+
+  // Dynamically create the gap effect
+  &:before,
+  &:after {
+    content: '';
+    height: inherit;
+    background: transparent;
+    display: block;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 0 $strength-gap 0;
+    position: absolute;
+    width: calc(20% + #{$strength-gap});
+    z-index: 10;
+  }
+
+  // Dynamically create the gap effect
+  &:before {
+    left: calc(20% - #{($strength-gap / 2)});
+  }
+
+  // Dynamically create the gap effect
+  &:after {
+    right: calc(20% - #{($strength-gap / 2)});
+  }
+}
+
+.strength-meter-fill {
+  background: transparent;
+  height: inherit;
+  position: absolute;
+  width: 0;
+  border-radius: inherit;
+  transition: width 0.5s ease-in-out, background 0.25s;
+
+  // Dynamically generate strength meter color styles
+  @for $i from 1 through 5 {
+    &[data-strength='#{$i - 1}'] {
+      width: (20% * $i);
+      background: nth($strength-colors, $i);
+    }
+  }
+}
