@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/password-strength-checker/static/css/main.7ce5e15a.chunk.css",
+    "main.js": "/password-strength-checker/static/js/main.489f7788.chunk.js",
+    "main.js.map": "/password-strength-checker/static/js/main.489f7788.chunk.js.map",
+    "runtime-main.js": "/password-strength-checker/static/js/runtime-main.1302d849.js",
+    "runtime-main.js.map": "/password-strength-checker/static/js/runtime-main.1302d849.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/password-strength-checker/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.0bb43a43.chunk.js": "/password-strength-checker/static/js/2.0bb43a43.chunk.js",
+    "static/js/2.0bb43a43.chunk.js.map": "/password-strength-checker/static/js/2.0bb43a43.chunk.js.map",
+    "static/js/3.8cc0721c.chunk.js": "/password-strength-checker/static/js/3.8cc0721c.chunk.js",
+    "static/js/3.8cc0721c.chunk.js.map": "/password-strength-checker/static/js/3.8cc0721c.chunk.js.map",
+    "index.html": "/password-strength-checker/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/password-strength-checker/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.7ce5e15a.chunk.css.map": "/password-strength-checker/static/css/main.7ce5e15a.chunk.css.map",
+    "static/js/2.0bb43a43.chunk.js.LICENSE.txt": "/password-strength-checker/static/js/2.0bb43a43.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1302d849.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.0bb43a43.chunk.js",
+    "static/css/main.7ce5e15a.chunk.css",
+    "static/js/main.489f7788.chunk.js"
+  ]
+}
